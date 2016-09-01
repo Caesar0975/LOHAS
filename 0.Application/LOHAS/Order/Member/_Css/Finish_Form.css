@@ -1,0 +1,52 @@
+﻿#Finish_Form {
+    padding: 40px 80px;
+    color: #594930;
+    letter-spacing: 1px;
+}
+
+    #Finish_Form h1 {
+        display: block;
+        font-size: 31px;
+        text-align: center;
+    }
+
+    #Finish_Form .Content {
+        padding: 20px 0 40px 0;
+    }
+        #Finish_Form .Content table{
+            margin:20px 0 20px 0;
+            font-size:17px;
+        }
+
+        #Finish_Form .Content p {
+            font-size: 19px;
+        }
+
+    #Finish_Form .LinkPanel {
+        text-align: center;
+    }
+
+        #Finish_Form .LinkPanel .MoreLink {
+            display: inline-block;
+            width: 300px;
+            height: 52px;
+            color: white;
+            line-height: 52px;
+            font-size: 19px;
+            letter-spacing: 1px;
+            text-align: center;
+            background-color: #8B6E49;
+            border-radius: 10px;
+            vertical-align: middle;
+        }
+
+        #Finish_Form .LinkPanel .FbLink {
+            margin-left: 50px;
+            display: inline-block;
+            width: 52px;
+            height: 52px;
+            background-image: url('/Order/Member/_Image/Finish_Form/FbIcon.png');
+            background-size:cover;
+            border-radius: 10px;
+            vertical-align: middle;
+        }

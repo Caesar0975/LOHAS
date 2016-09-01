@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/_MasterPage/Base.master" AutoEventWireup="true" CodeFile="Base_Visitor.master.cs" Inherits="_MasterPage_Base_Member" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <link href="/_MasterPage/_Css/Base_Visitor.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div id="Base_Visitor">
+        <div class="Head">
+            <a class="Logo" href="/" target="_top"></a>
+            <div class="NavPanel">
+                <a class="NavItem" href="/" target="_top">活動首頁</a>
+                <a class="NavItem" href="/Order/Member/Order_Form.aspx" target="_top">立即報名</a>
+                <a class="NavItem" href="/VisitorLogin.aspx" target="_top">修改預約資料</a>
+            </div>
+        </div>
+        <div class="Body">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div style="height: 1px; clear: both;"></div>
+    </div>
+
+    <!-- AnalyticsCode -->
+    <asp:Literal ID="vAnalyticsCode" runat="server"></asp:Literal>
+</asp:Content>
+

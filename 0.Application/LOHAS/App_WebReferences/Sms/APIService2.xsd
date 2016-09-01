@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TransferConnService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TransferConnService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://202.153.187.252:9090/APIService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="APITimingMode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Immediate">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Reservation">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="APITimingMode" nillable="true" type="tns:APITimingMode" />
+  <xs:complexType name="StringResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StringOutput" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StringResult" nillable="true" type="tns:StringResult" />
+  <xs:complexType name="CheckDupResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Duplicate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ErrorMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StringOutput" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CheckDupResult" nillable="true" type="tns:CheckDupResult" />
+  <xs:complexType name="DoubleResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnDouble" type="xs:double" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DoubleResult" nillable="true" type="tns:DoubleResult" />
+  <xs:complexType name="SMSQueryResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SmsDetail" nillable="true" type="tns:ArrayOfSMSDetailStruc" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SMSQueryResult" nillable="true" type="tns:SMSQueryResult" />
+  <xs:complexType name="ArrayOfSMSDetailStruc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SMSDetailStruc" nillable="true" type="tns:SMSDetailStruc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSMSDetailStruc" nillable="true" type="tns:ArrayOfSMSDetailStruc" />
+  <xs:complexType name="SMSDetailStruc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CheckDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DestAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JobGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MsgBody" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Seq" type="xs:double" />
+      <xs:element minOccurs="0" name="SmsStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SMSDetailStruc" nillable="true" type="tns:SMSDetailStruc" />
+  <xs:complexType name="VoidResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VoidResult" nillable="true" type="tns:VoidResult" />
+  <xs:complexType name="ArrayOfTwoWayReply">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TwoWayReply" nillable="true" type="tns:TwoWayReply" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTwoWayReply" nillable="true" type="tns:ArrayOfTwoWayReply" />
+  <xs:complexType name="TwoWayReply">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LongFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ReceiveCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReplyMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TwoWayReply" nillable="true" type="tns:TwoWayReply" />
+  <xs:complexType name="ReplyQueryResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TwoWayReceiveData" nillable="true" type="tns:ArrayOfTwoWayReceiveStruc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReplyQueryResult" nillable="true" type="tns:ReplyQueryResult" />
+  <xs:complexType name="ArrayOfTwoWayReceiveStruc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TwoWayReceiveStruc" nillable="true" type="tns:TwoWayReceiveStruc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTwoWayReceiveStruc" nillable="true" type="tns:ArrayOfTwoWayReceiveStruc" />
+  <xs:complexType name="TwoWayReceiveStruc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Content" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JobGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReceiveCellNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReceiveTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SMSActivityID" type="xs:double" />
+      <xs:element minOccurs="0" name="SendCellNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SeqNoMT" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TwoWayReceiveStruc" nillable="true" type="tns:TwoWayReceiveStruc" />
+</xs:schema>

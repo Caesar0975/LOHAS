@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://easyGo.com.tw/services" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="APIService" targetNamespace="http://easyGo.com.tw/services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://easyGo.com.tw/services/Imports">
+      <xsd:import schemaLocation="http://202.153.187.252:9090/APIService?xsd=xsd0" namespace="http://easyGo.com.tw/services" />
+      <xsd:import schemaLocation="http://202.153.187.252:9090/APIService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://202.153.187.252:9090/APIService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TransferConnService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAPIService_CallSendSMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallSendSMS" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSendSMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallSendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSendSMS2_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallSendSMS2" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSendSMS2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallSendSMS2Response" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSendSMSD_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallSendSMSD" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSendSMSD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallSendSMSDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSendSMSD2_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallSendSMSD2" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSendSMSD2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallSendSMSD2Response" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallDeleteJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallDeleteJob" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallDeleteJob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallDeleteJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallQueryPoints_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallQueryPoints" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallQueryPoints_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallQueryPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallQuerySMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallQuerySMS" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallQuerySMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallQuerySMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSetIPAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallSetIPAddress" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSetIPAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallSetIPAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSetReceiveHost_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallSetReceiveHost" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSetReceiveHost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallSetReceiveHostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallCreateActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallCreateActivity" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallCreateActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallCreateActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallTwoWaySendSMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallTwoWaySendSMS" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallTwoWaySendSMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallTwoWaySendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallTwoWaySendSMS2_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallTwoWaySendSMS2" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallTwoWaySendSMS2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallTwoWaySendSMS2Response" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallTwoWayReplyConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallTwoWayReplyConfig" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallTwoWayReplyConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallTwoWayReplyConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallQueryReply_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallQueryReply" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallQueryReply_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallQueryReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSetReplyHost_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallSetReplyHost" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallSetReplyHost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallSetReplyHostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallDeleteActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallDeleteActivity" />
+  </wsdl:message>
+  <wsdl:message name="IAPIService_CallDeleteActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallDeleteActivityResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAPIService">
+    <wsdl:operation name="CallSendSMS">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSendSMS" message="tns:IAPIService_CallSendSMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSendSMSResponse" message="tns:IAPIService_CallSendSMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallSendSMS2">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSendSMS2" message="tns:IAPIService_CallSendSMS2_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSendSMS2Response" message="tns:IAPIService_CallSendSMS2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallSendSMSD">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSendSMSD" message="tns:IAPIService_CallSendSMSD_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSendSMSDResponse" message="tns:IAPIService_CallSendSMSD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallSendSMSD2">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSendSMSD2" message="tns:IAPIService_CallSendSMSD2_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSendSMSD2Response" message="tns:IAPIService_CallSendSMSD2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallDeleteJob">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallDeleteJob" message="tns:IAPIService_CallDeleteJob_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallDeleteJobResponse" message="tns:IAPIService_CallDeleteJob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallQueryPoints">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallQueryPoints" message="tns:IAPIService_CallQueryPoints_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallQueryPointsResponse" message="tns:IAPIService_CallQueryPoints_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallQuerySMS">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallQuerySMS" message="tns:IAPIService_CallQuerySMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallQuerySMSResponse" message="tns:IAPIService_CallQuerySMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallSetIPAddress">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSetIPAddress" message="tns:IAPIService_CallSetIPAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSetIPAddressResponse" message="tns:IAPIService_CallSetIPAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallSetReceiveHost">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSetReceiveHost" message="tns:IAPIService_CallSetReceiveHost_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSetReceiveHostResponse" message="tns:IAPIService_CallSetReceiveHost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallCreateActivity">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallCreateActivity" message="tns:IAPIService_CallCreateActivity_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallCreateActivityResponse" message="tns:IAPIService_CallCreateActivity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallTwoWaySendSMS">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallTwoWaySendSMS" message="tns:IAPIService_CallTwoWaySendSMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallTwoWaySendSMSResponse" message="tns:IAPIService_CallTwoWaySendSMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallTwoWaySendSMS2">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallTwoWaySendSMS2" message="tns:IAPIService_CallTwoWaySendSMS2_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallTwoWaySendSMS2Response" message="tns:IAPIService_CallTwoWaySendSMS2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallTwoWayReplyConfig">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallTwoWayReplyConfig" message="tns:IAPIService_CallTwoWayReplyConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallTwoWayReplyConfigResponse" message="tns:IAPIService_CallTwoWayReplyConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallQueryReply">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallQueryReply" message="tns:IAPIService_CallQueryReply_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallQueryReplyResponse" message="tns:IAPIService_CallQueryReply_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallSetReplyHost">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSetReplyHost" message="tns:IAPIService_CallSetReplyHost_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallSetReplyHostResponse" message="tns:IAPIService_CallSetReplyHost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallDeleteActivity">
+      <wsdl:input wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallDeleteActivity" message="tns:IAPIService_CallDeleteActivity_InputMessage" />
+      <wsdl:output wsaw:Action="http://easyGo.com.tw/services/IAPIService/CallDeleteActivityResponse" message="tns:IAPIService_CallDeleteActivity_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="easyGo.com.tw" type="tns:IAPIService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CallSendSMS">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallSendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallSendSMS2">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallSendSMS2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallSendSMSD">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallSendSMSD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallSendSMSD2">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallSendSMSD2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallDeleteJob">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallDeleteJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallQueryPoints">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallQueryPoints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallQuerySMS">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallQuerySMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallSetIPAddress">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallSetIPAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallSetReceiveHost">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallSetReceiveHost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallCreateActivity">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallCreateActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallTwoWaySendSMS">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallTwoWaySendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallTwoWaySendSMS2">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallTwoWaySendSMS2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallTwoWayReplyConfig">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallTwoWayReplyConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallQueryReply">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallQueryReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallSetReplyHost">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallSetReplyHost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallDeleteActivity">
+      <soap:operation soapAction="http://easyGo.com.tw/services/IAPIService/CallDeleteActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="APIService">
+    <wsdl:port name="easyGo.com.tw" binding="tns:easyGo.com.tw">
+      <soap:address location="http://202.153.187.252:9090/APIService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

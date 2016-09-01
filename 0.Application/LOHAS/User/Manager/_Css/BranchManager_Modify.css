@@ -1,0 +1,18 @@
+﻿body {
+    width: 400px;
+}
+
+#BranchManager_Modify {
+}
+
+    #BranchManager_Modify .Table2 .Plans {
+        line-height: 30px;
+    }
+
+    #BranchManager_Modify .Button2.Red {
+        float: left;
+    }
+
+    #BranchManager_Modify .Button2.Blue {
+        float: right;
+    }

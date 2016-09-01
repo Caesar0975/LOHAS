@@ -1,0 +1,19 @@
+﻿#Base_Popup {
+}
+
+    #Base_Popup .Table2 {
+        width: 100%;
+    }
+
+        #Base_Popup .Table2 th {
+            text-align: right;
+        }
+
+        #Base_Popup .Table2 td {
+            text-align: left;
+        }
+
+    #Base_Popup .Sort {
+        text-align: right;
+        width: 35px;
+    }

@@ -1,0 +1,52 @@
+﻿#School_List {
+}
+
+    #School_List .Table1.Detail {
+        width: 100%;
+    }
+
+        #School_List .Table1.Detail th {
+            text-align: center;
+        }
+        #School_List .SlectItem {
+        position: relative;
+        display: inline-block;
+        margin: 11px 7px 5px 3px;
+        }
+
+        #School_List .SlectItem .Name {
+            float: left;
+            width: 103px;
+            height: 30px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 30px;
+            letter-spacing: 1px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+            #School_List .SlectItem .Name:hover {
+                border: 1px solid #b40000;
+                color: #b40000;
+            }
+
+            #School_List .SlectItem .Name.Selected {
+                color: white;
+                text-shadow: 0 1px 1px #999;
+                border: 1px solid #b40000;
+                background-color: #b40000;
+            }
+
+        #School_List .SlectItem .Edit {
+            position: absolute;
+            top: -11px;
+            right: -14px;
+            cursor: pointer;
+        }
+
+    #School_List .Add {
+        margin: 3px 0 0 0px;
+        display: inline-block;
+    }

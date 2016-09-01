@@ -1,0 +1,156 @@
+﻿body {
+}
+
+#Order_Search {
+}
+
+    #Order_Search h3 {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    #Order_Search .Table1 {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    #Order_Search .Table1 {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    #Order_Search .Calendar {
+        width: 100%;
+        color: White;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-width: 10px;
+    }
+
+        #Order_Search .Calendar .Title {
+            height: 25px;
+            background-color: #0761BC;
+        }
+
+        #Order_Search .Calendar .DayHeader {
+            font-size: 15px;
+            height: 30px;
+            background-color: #0761BC;
+        }
+
+        #Order_Search .Calendar .NextPrev {
+            padding: 0 10px 0 10px;
+        }
+
+
+        #Order_Search .Calendar .DateCell {
+            padding: 6px 0;
+            color: #666;
+            font-size: 15px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: white;
+            background-color: #F1F1F1;
+            border-radius: 10px;
+        }
+
+            #Order_Search .Calendar .DateCell.OtherMonth {
+                background-color: #fafafa;
+            }
+
+                #Order_Search .Calendar .DateCell.OtherMonth a {
+                    color: #888 !important;
+                    font-size: 13px;
+                    font-weight: normal;
+                }
+
+            #Order_Search .Calendar .DateCell a {
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                cursor: pointer;
+            }
+
+            #Order_Search .Calendar .DateCell.HalfHeight a {
+                line-height: 23px;
+            }
+
+        #Order_Search .Calendar a .Date {
+            font-size: 17px;
+        }
+
+        #Order_Search .Calendar a .Amount {
+            display: inline-block;
+            padding-left: 5px;
+            font-size: 11px;
+            line-height: 12px;
+        }
+
+        #Order_Search .Calendar a .UnProcessAmount {
+            color: #ff6c00;
+        }
+
+        #Order_Search .Calendar a .ProcessAmount {
+            color: #2871bb;
+        }
+
+        #Order_Search .Calendar a .ShipmentAmount {
+            color: #32bb28;
+        }
+
+        #Order_Search .Calendar .SelectedDay {
+            padding: 6px 0;
+            font-size: 13px;
+            border-radius: 10px !important;
+            background-color: #0761BC !important;
+        }
+
+            #Order_Search .Calendar .SelectedDay a {
+                font-size: 17px;
+                color: #fff !important;
+                text-shadow: 1px 1px 1px #333;
+            }
+
+                #Order_Search .Calendar .SelectedDay a .Amount {
+                    font-size: 11px;
+                    color: #fff !important;
+                    text-shadow: 1px 1px 1px #333;
+                }
+
+    #Order_Search .Detail {
+    }
+
+        #Order_Search .Detail .OrderStateType {
+        }
+
+            #Order_Search .Detail .OrderStateType input {
+                display: none;
+            }
+
+                #Order_Search .Detail .OrderStateType input + label {
+                    padding: 3px 2px;
+                    margin: 1px 0;
+                    display: inline-block;
+                    width: 60px;
+                    border-radius: 5px;
+                    text-align: center;
+                    color: #777;
+                    letter-spacing: 1px;
+                    background-color: #eee;
+                    cursor: pointer;
+                }
+
+                #Order_Search .Detail .OrderStateType input[checked=checked]:nth-child(1) + label {
+                    color: #fff;
+                    background-color: #ff6c00;
+                }
+
+                #Order_Search .Detail .OrderStateType input[checked=checked]:nth-child(4) + label {
+                    color: #fff;
+                    background-color: #2871bb;
+                }
+
+                #Order_Search .Detail .OrderStateType input[checked=checked]:nth-child(7) + label {
+                    color: #fff;
+                    background-color: #32bb28;
+                }

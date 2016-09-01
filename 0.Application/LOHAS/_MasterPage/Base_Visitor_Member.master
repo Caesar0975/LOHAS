@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/_MasterPage/Base_Visitor.master" AutoEventWireup="true" CodeFile="Base_Visitor_Member.master.cs" Inherits="_MasterPage_Base_Visitor_Member" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+

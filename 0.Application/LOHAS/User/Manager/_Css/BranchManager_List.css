@@ -1,0 +1,10 @@
+﻿#BranchManager_List {
+}
+
+    #BranchManager_List .Table1.Detail {
+        width: 100%;
+    }
+
+        #BranchManager_List .Table1.Detail th {
+            text-align: center;
+        }

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/_MasterPage/Base.master" AutoEventWireup="true" CodeFile="Base_Manager.master.cs" Inherits="_MasterPage_Base_Manager" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <link href="/_MasterPage/_Css/Base_Manager.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div id="Base_Manager">
+        <div class="HeadTop"></div>
+        <div class="Head">
+            <div class="Middle">
+                <asp:Panel ID="MainMenu" runat="server">
+                    <asp:HyperLink ID="vBranchManager" NavigateUrl="/User/Manager/BranchManager_List.aspx" CssClass="Tab1 Main" Text="分店長管理" runat="server"></asp:HyperLink>
+                    <asp:HyperLink ID="vMemberLink" NavigateUrl="/User/Manager/Member_List.aspx" CssClass="Tab1 Main" Text="學生管理" runat="server"></asp:HyperLink>
+                    <asp:HyperLink ID="vSlideShowLink" NavigateUrl="/SlideShow/Manager/SlideShow_List.aspx" CssClass="Tab1 Main" Text="橫幅管理" runat="server"></asp:HyperLink>
+                    <asp:HyperLink ID="vSchoolLink" NavigateUrl="/School/Manager/School_List.aspx" CssClass="Tab1 Main" Text="學校管理" runat="server"></asp:HyperLink>
+                    <asp:HyperLink ID="vShopLink" NavigateUrl="/Shop/Manager/Shop_List.aspx" CssClass="Tab1 Main" Text="門市管理" runat="server"></asp:HyperLink>                    
+                    <asp:HyperLink ID="vOrderLink" NavigateUrl="/Order/Manager/Order_List.aspx" CssClass="Tab1 Main" Text="預約管理" runat="server"></asp:HyperLink>
+                    <asp:HyperLink ID="vQuestionnaireLink" NavigateUrl="/Order/Manager/QuestionnaireItem_List.aspx" CssClass="Tab1 Main" Text="問卷管理" runat="server"></asp:HyperLink>
+                    <asp:HyperLink ID="vSmsLink" NavigateUrl="/Sms/Manager/Sms_List.aspx" CssClass="Tab1 Main" Text="簡訊管理" runat="server"></asp:HyperLink>
+                    <asp:HyperLink ID="vConfigLink" NavigateUrl="/Config/Manager/Config.aspx" CssClass="Tab1 Main" Text="系統設定" runat="server"></asp:HyperLink>
+                </asp:Panel>
+                <asp:HyperLink ID="ChangePassword" NavigateUrl="/User/Manager/ChangePassword.aspx" Target="_top" runat="server" CssClass="UserFunction fancybox">密碼修改</asp:HyperLink>
+                <asp:LinkButton ID="lbtnLogout" runat="server" CssClass="UserFunction" OnClick="lbtnLogout_Click">登出</asp:LinkButton>
+                <asp:Label ID="Account" runat="server" CssClass="UserFunction"></asp:Label>
+            </div>
+        </div>
+        <div class="Body">
+            <div class="Top">
+            </div>
+            <div class="Middle Main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div style="height: 1px; clear: both;">
+                </div>
+            </div>
+            <div class="Down">
+            </div>
+        </div>
+        <div class="Foot"></div>
+    </div>
+
+</asp:Content>

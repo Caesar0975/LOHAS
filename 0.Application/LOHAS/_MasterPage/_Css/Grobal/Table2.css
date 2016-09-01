@@ -1,0 +1,36 @@
+﻿.Table2 {    
+    color: #333333;
+    letter-spacing: 1px;
+    border-collapse: collapse;
+}
+
+    .Table2 th {
+        text-align: right;
+        padding: 6px;
+        background-color: #eeeeee;
+        border: 1px solid #d5d5d5;
+    }
+
+    .Table2 > tbody > tr > td {
+        padding: 6px;
+        background-color: #ffffff;
+        border: 1px solid #d5d5d5;
+    }
+
+        .Table2 td.Transparent {
+            padding: 6px 0;
+            background-color: transparent;
+            border: none;
+        }
+
+    .Table2 table tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+
+    .Table2 table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .Table2 table td {
+        border: none;
+    }

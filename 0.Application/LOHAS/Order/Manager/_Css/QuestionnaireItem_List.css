@@ -1,0 +1,21 @@
+﻿#QuestionnaireItem_List {
+}
+
+#QuestionnaireItem_List h3{
+    margin:0;
+    padding:0;
+}
+
+
+    #QuestionnaireItem_List table.vQuestionnaireItem_List {
+        width: 100%;
+    }
+
+    #QuestionnaireItem_List .Title {
+        font-size: 15px;
+    }
+
+    #QuestionnaireItem_List .ShortTitle {
+        font-size: 13px;
+        color: #666;
+    }

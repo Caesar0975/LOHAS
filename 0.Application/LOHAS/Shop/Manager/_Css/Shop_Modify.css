@@ -1,0 +1,48 @@
+﻿body {
+    width: 500px;
+}
+
+#Shop_Modify {
+}
+
+    #Shop_Modify .Table2 .AreaItem {
+        padding-bottom: 10px;
+        font-size: 17px;
+    }
+
+        #Shop_Modify .Table2 .AreaItem .AllAreaSchool {
+            font-weight: normal;
+            font-size: 11px;
+            color: #999;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+            #Shop_Modify .Table2 .AreaItem .AllAreaSchool:hover {
+                color: blue;
+            }
+
+        #Shop_Modify .Table2 .AreaItem span input {
+            vertical-align: top;
+        }
+
+        #Shop_Modify .Table2 .AreaItem span label {
+            display: inline-block;
+            width: 108px;
+            height: 20px;
+            font-size: 13px;
+            color: #666;
+            overflow: hidden;
+        }
+
+    #Shop_Modify .Table2 .Plans {
+        line-height: 30px;
+    }
+
+    #Shop_Modify .Button2.Red {
+        float: left;
+    }
+
+    #Shop_Modify .Button2.Blue {
+        float: right;
+    }

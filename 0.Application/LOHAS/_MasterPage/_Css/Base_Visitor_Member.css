@@ -1,0 +1,42 @@
+﻿#Base_Member {
+    width: 950px;
+    margin: 0 auto;
+}
+
+    #Base_Member .Head {
+        position: relative;
+        height: 88px;
+        background-color: #8F6F4A;
+    }
+
+        #Base_Member .Head .Logo {
+            position: absolute;
+            top: 28px;
+            left: 67px;
+            display: block;
+            width: 246px;
+            height: 46px;
+            background-image: url('/_MasterPage/_Image/Base_Member/Logo.gif');
+            background-repeat:no-repeat;
+            border:0 solid #8F6F4A;
+        }
+
+        #Base_Member .Head .NavPanel {
+            display: inline-block;
+            padding: 0 4px;
+            color: #666;
+            letter-spacing: 1px;
+        }
+
+        #Base_Member .Head a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        #Base_Member .Head .AlignRight {
+            float: right;
+        }
+
+    #Base_Member .Body {
+        padding-top: 50px;
+    }

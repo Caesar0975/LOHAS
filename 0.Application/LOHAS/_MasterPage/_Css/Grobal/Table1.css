@@ -1,0 +1,62 @@
+﻿.Table1 {
+    margin: 0 0 15px 0;
+    color: #333333;
+    letter-spacing: 1px;
+
+}
+
+    .Table1 tr.Cancel {
+        text-decoration: line-through;
+    }
+
+    .Table1 th, .Table1 td {
+        text-align: center;
+        padding: 4px 5px !important;
+    }
+
+    .Table1 thead th {
+        font-size: 14px;
+        letter-spacing:1px;
+        font-weight: normal;
+        color:#999;
+        border-bottom: 1px solid #eee;
+    }
+
+    .Table1 tbody td {
+        text-align: left;
+        vertical-align: middle;
+    }
+
+
+    .Table1 > tbody > tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    .Table1 > tbody > tr:nth-child(even) {
+        background-color: #efefef;
+    }
+
+    .Table1 > tbody > tr:hover {
+       background-color: #fffcdb;    
+    }
+
+    .Table1 tbody th {
+        vertical-align: middle;
+        text-align: right;
+    }
+
+    .Table1 table td {
+        border:1px dotted #c8ccce;
+    }
+
+    .Table1 tfoot td, .Table1 tfoot th {
+    }
+
+    .Table1 tbody table {
+
+    }
+
+    .Table1 tbody table th {
+        border: none;
+        text-align: center;
+    }

@@ -1,0 +1,28 @@
+﻿.Block .Item {
+    float: left;
+    position: relative;
+    margin: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+    .Block .Item .lbtnItem {
+        display: block;
+        padding: 7px;
+        min-width: 92px;
+        height: 25px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        background-color: #DDD;
+    }
+
+.Block .lbtnItem.Selected {
+    background-color: #BBB;
+}
+
+.Block .Item .Button1.Edit {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+}

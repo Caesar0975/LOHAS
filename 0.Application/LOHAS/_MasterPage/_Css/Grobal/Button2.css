@@ -1,0 +1,73 @@
+﻿.Button2 {
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+    min-width: 60px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    letter-spacing:1px;
+    background-repeat: repeat-x;
+    border-radius: 3px;
+}
+
+    .Button2:hover,.Button2.Selected {
+        background-position: 0 -28px;
+    }
+
+    .Button2.White {
+        color: #333333;
+        border: 1px solid #bbbbbb;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/White.png");
+    }
+
+    .Button2.Blue {
+        border: 1px solid #055b99;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/Blue.png");
+    }
+
+    .Button2.Black {
+        border: 1px solid #1f1f1f;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/Black.png");
+    }
+
+    .Button2.Green {
+        border: 1px solid #37822b;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/Green.png");
+    }
+
+    .Button2.Navi {
+        border: 1px solid #303234;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/Navi.png");
+    }
+
+    .Button2.Orange {
+        border: 1px solid #b86a12;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/Orange.png");
+    }
+
+    .Button2.Red {
+        border: 1px solid #842020;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/Red.png");
+    }
+
+    .Button2.RedLight {
+        border: 1px solid #8b0a0e;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/RedLight.png");
+    }
+
+    .Button2.Sky {
+        border: 1px solid #347cbc;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/Sky.png");
+    }
+
+    .Button2.Turgu {
+        border: 1px solid #106b86;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/Turgu.png");
+    }
+
+    .Button2.Yellow {
+        color: #333333;
+        border: 1px solid #af930d;
+        background-image: url("/_MasterPage/_Css/Grobal/Button2/Yellow.png");
+    }

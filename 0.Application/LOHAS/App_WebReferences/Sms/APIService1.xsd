@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://easyGo.com.tw/services" elementFormDefault="qualified" targetNamespace="http://easyGo.com.tw/services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://202.153.187.252:9090/APIService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TransferConnService" />
+  <xs:element name="CallSendSMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cellno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MsgBody" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="Mode" type="q1:APITimingMode" />
+        <xs:element minOccurs="0" name="LongFlag" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ActivateDateTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="SMSExpireTime" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSendSMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallSendSMSResult" nillable="true" type="q2:StringResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSendSMS2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cellno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MsgBody" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="Mode" type="q3:APITimingMode" />
+        <xs:element minOccurs="0" name="LongFlag" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ActivateDateTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="SMSExpireTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="IsReturnSeq" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSendSMS2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallSendSMS2Result" nillable="true" type="q4:StringResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSendSMSD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cellno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MsgBody" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="Mode" type="q5:APITimingMode" />
+        <xs:element minOccurs="0" name="LongFlag" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ActivateDateTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="SMSExpireTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="CustomID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSendSMSDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallSendSMSDResult" nillable="true" type="q6:CheckDupResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSendSMSD2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cellno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MsgBody" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="Mode" type="q7:APITimingMode" />
+        <xs:element minOccurs="0" name="LongFlag" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ActivateDateTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="SMSExpireTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="CustomID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsReturnSeq" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSendSMSD2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallSendSMSD2Result" nillable="true" type="q8:CheckDupResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallDeleteJob">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobGroup" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallDeleteJobResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallDeleteJobResult" nillable="true" type="q9:DoubleResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallQueryPoints">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallQueryPointsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallQueryPointsResult" nillable="true" type="q10:DoubleResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallQuerySMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Seq" nillable="true" type="xs:double" />
+        <xs:element minOccurs="0" name="JobGroup" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cellno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="WithMsgBody" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallQuerySMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallQuerySMSResult" nillable="true" type="q11:SMSQueryResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSetIPAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TargetUserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IPAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Enabled" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSetIPAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallSetIPAddressResult" nillable="true" type="q12:VoidResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSetReceiveHost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Enabled" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSetReceiveHostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallSetReceiveHostResult" nillable="true" type="q13:VoidResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallCreateActivity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SMSActivityID" type="xs:double" />
+        <xs:element minOccurs="0" name="MSDNNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ActName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ActDescription" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ExpireDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="MaxMT2Cnt" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="InSendTarget" nillable="true" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallCreateActivityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallCreateActivityResult" nillable="true" type="q14:StringResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallTwoWaySendSMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SMSActivityID" type="xs:double" />
+        <xs:element minOccurs="0" name="Cellno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MsgBody" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="Mode" type="q15:APITimingMode" />
+        <xs:element minOccurs="0" name="LongFlag" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ActivateDateTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="SMSExpireTime" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallTwoWaySendSMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallTwoWaySendSMSResult" nillable="true" type="q16:StringResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallTwoWaySendSMS2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SMSActivityID" type="xs:double" />
+        <xs:element minOccurs="0" name="Cellno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MsgBody" nillable="true" type="xs:string" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="Mode" type="q17:APITimingMode" />
+        <xs:element minOccurs="0" name="LongFlag" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ActivateDateTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="SMSExpireTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="IsReturnSeq" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallTwoWaySendSMS2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallTwoWaySendSMS2Result" nillable="true" type="q18:StringResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallTwoWayReplyConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SMSActivityID" type="xs:double" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="TwoWayReplys" nillable="true" type="q19:ArrayOfTwoWayReply" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallTwoWayReplyConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallTwoWayReplyConfigResult" nillable="true" type="q20:VoidResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallQueryReply">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SMSActivityID" nillable="true" type="xs:double" />
+        <xs:element minOccurs="0" name="SendCellNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ReceiveCellNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Content" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ReceiveTimeStart" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ReceiveTimeEnd" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallQueryReplyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallQueryReplyResult" nillable="true" type="q21:ReplyQueryResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSetReplyHost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Enabled" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallSetReplyHostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallSetReplyHostResult" nillable="true" type="q22:VoidResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallDeleteActivity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SMSActivityID" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallDeleteActivityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/TransferConnService" minOccurs="0" name="CallDeleteActivityResult" nillable="true" type="q23:VoidResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

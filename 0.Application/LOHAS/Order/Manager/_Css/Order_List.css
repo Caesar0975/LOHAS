@@ -1,0 +1,189 @@
+﻿body {
+}
+
+#Order_List {
+}
+
+    #Order_List .SlectItem {
+        position: relative;
+        display: inline-block;
+        margin: 11px 7px 5px 3px;
+    }
+
+        #Order_List .SlectItem .Name {
+            padding: 4px 10px;
+            float: left;
+            width: 130px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+            #Order_List .SlectItem .Name:hover {
+                border: 1px solid #b40000;
+                color: #b40000;
+            }
+
+            #Order_List .SlectItem .Name.Selected {
+                color: white;
+                text-shadow: 0 1px 1px #999;
+                border: 1px solid #b40000;
+                background-color: #b40000;
+            }
+
+    #Order_List h3 {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    #Order_List .Table1 {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    #Order_List .Calendar {
+        width: 100%;
+        color: White;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-width: 10px;
+    }
+
+        #Order_List .Calendar .Title {
+            height: 25px;
+            background-color: #0761BC;
+        }
+
+        #Order_List .Calendar .DayHeader {
+            font-size: 15px;
+            height: 30px;
+            background-color: #0761BC;
+        }
+
+        #Order_List .Calendar .NextPrev {
+            padding: 0 10px 0 10px;
+        }
+
+
+        #Order_List .Calendar .DateCell {
+            padding: 6px 0;
+            color: #666;
+            font-size: 15px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: white;
+            background-color: #F1F1F1;
+            border-radius: 10px;
+        }
+
+            #Order_List .Calendar .DateCell.OtherMonth {
+                background-color: #fafafa;
+            }
+
+                #Order_List .Calendar .DateCell.OtherMonth a {
+                    color: #888 !important;
+                    font-size: 13px;
+                    font-weight: normal;
+                }
+
+            #Order_List .Calendar .DateCell a {
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                cursor: pointer;
+            }
+
+            #Order_List .Calendar .DateCell.HalfHeight a {
+                line-height: 23px;
+            }
+
+        #Order_List .Calendar a .Date {
+            font-size: 17px;
+        }
+
+        #Order_List .Calendar a .Amount {
+            display: inline-block;
+            padding-left: 5px;
+            font-size: 11px;
+            line-height: 12px;
+        }
+
+        #Order_List .Calendar a .UnProcessAmount {
+            color: #ff6c00;
+        }
+
+        #Order_List .Calendar a .ProcessAmount {
+            color: #2871bb;
+        }
+
+        #Order_List .Calendar a .FinishAmount {
+            color: #32bb28;
+        }
+
+        #Order_List .Calendar a .NotComeAmount {
+            color: #eb4a59;
+        }
+
+        #Order_List .Calendar .SelectedDay {
+            padding: 6px 0;
+            font-size: 13px;
+            border-radius: 10px !important;
+            background-color: #0761BC !important;
+        }
+
+            #Order_List .Calendar .SelectedDay a {
+                font-size: 17px;
+                color: #fff !important;
+                text-shadow: 1px 1px 1px #333;
+            }
+
+                #Order_List .Calendar .SelectedDay a .Amount {
+                    font-size: 11px;
+                    color: #fff !important;
+                    text-shadow: 1px 1px 1px #333;
+                }
+
+    #Order_List .Detail {
+    }
+
+        #Order_List .Detail .OrderStateType {
+        }
+
+            #Order_List .Detail .OrderStateType input {
+                display: none;
+            }
+
+                #Order_List .Detail .OrderStateType input + label {
+                    padding: 3px 2px;
+                    margin: 1px 0;
+                    display: inline-block;
+                    width: 60px;
+                    border-radius: 5px;
+                    text-align: center;
+                    color: #777;
+                    letter-spacing: 1px;
+                    background-color: #eee;
+                    cursor: pointer;
+                }
+
+                #Order_List .Detail .OrderStateType input[checked=checked]:nth-child(1) + label {
+                    color: #fff;
+                    background-color: #ff6c00;
+                }
+
+                #Order_List .Detail .OrderStateType input[checked=checked]:nth-child(4) + label {
+                    color: #fff;
+                    background-color: #2871bb;
+                }
+
+                #Order_List .Detail .OrderStateType input[checked=checked]:nth-child(7) + label {
+                    color: #fff;
+                    background-color: #32bb28;
+                }
+
+                #Order_List .Detail .OrderStateType input[checked=checked]:nth-child(10) + label {
+                    color: #fff;
+                    background-color: #eb4a59;
+                }

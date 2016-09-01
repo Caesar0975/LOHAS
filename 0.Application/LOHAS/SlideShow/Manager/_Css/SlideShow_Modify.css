@@ -1,0 +1,22 @@
+﻿body{
+    width: 600px;
+}
+
+#SlideShow_Modify {
+}
+
+#SlideShow_Modify .Table1{
+    width: 100%;
+}
+
+#SlideShow_Modify .Table1 img {
+    width: 100%;
+}
+
+    #SlideShow_Modify .Button2.Red {
+        float: left;
+    }
+
+    #SlideShow_Modify .Button2.Blue {
+        float: right;
+    }

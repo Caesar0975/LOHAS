@@ -1,0 +1,58 @@
+﻿#Questionnaire_Form {
+    padding: 40px;
+}
+
+    #Questionnaire_Form > .Title {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    #Questionnaire_Form .Questionaire_Item > .Title {
+        margin-top: 25px;
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #666;
+    }
+
+    #Questionnaire_Form .SendButton {
+        margin-right: 10px;
+        display: inline-block;
+        width: 260px;
+        padding: 34px 0;
+        color: white;
+        font-size: 19px;
+        letter-spacing: 1px;
+        text-align: center;
+        background-color: #8B6E49;
+        border-radius: 10px;
+        vertical-align: middle;
+    }
+
+    #Questionnaire_Form .FbSendButton {
+        position: relative;
+        display: inline-block;
+        padding: 20px 0;
+        width: 260px;
+        color: white;
+        font-size: 19px;
+        letter-spacing: 1px;
+        text-align: center;
+        background-color: #3B5998;
+        border-radius: 10px;
+        vertical-align: middle;
+    }
+
+        #Questionnaire_Form .FbSendButton .FbSendRemark {
+            position: absolute;
+            left: 50%;
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            bottom: -1.75em;
+            color: #333;
+            font-size: .75em;
+            -ms-word-break: keep-all;
+            word-break: keep-all;
+        }

@@ -1,0 +1,32 @@
+﻿
+.Title1 {
+    margin:0;
+    padding:0;
+    display: block;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #333;
+}
+
+.Title2 {
+    padding-left: 10px;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    margin: 0 2px;
+}

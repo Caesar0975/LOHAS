@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Base.master.cs" Inherits="_MasterPage_Base" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>上光眼鏡|LOHAS樂活館-大學生配了沒|全台大學生免費配鏡活動</title>
+    <link rel="icon" href="/_MasterPage/_Image/Base/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="/_MasterPage/_Script/jquery-ui-1.11.4/jquery-ui.min.css" />
+    <script type="text/javascript" src="/_MasterPage/_Script/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <style></style>
+    <script type="text/javascript">
+        function BindjQueryUI() {
+            $(".Sortable tbody").sortable({
+                helper: fixWidthHelper,
+                axis: "y",
+                opacity: 0.9,
+                handle: ".SortIcon"
+            }).disableSelection();
+
+            function fixWidthHelper(e, ui) {
+                ui.children().each(function () {
+                    $(this).width($(this).width());
+                });
+                return ui;
+            }
+        }
+    </script>
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <!-- DatePicker -->
+    <script type="text/javascript" src="/_MasterPage/_Script/My97DatePicker/WdatePicker.js"></script>
+
+    <!-- fancyBox -->
+    <script type="text/javascript" src="/_MasterPage/_Script/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="/_MasterPage/_Script/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/_MasterPage/_Script/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <script type="text/javascript" src="/_MasterPage/_Script/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <link rel="stylesheet" type="text/css" href="/_MasterPage/_Script/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="/_MasterPage/_Script/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript" src="/_MasterPage/_Script/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <script type="text/javascript">
+        function BindFancyBox() {
+            $(".fancybox").fancybox({
+                fitToView: true,
+                openEffect: 'elastic',
+                closeEffect: 'elastic',
+                openOpacity: false,
+                closeOpacity: false,
+                type: 'iframe',
+                beforeShow: function () {
+                    this.width = $('.fancybox-iframe').contents().find('body').width();
+                    this.height = $('.fancybox-iframe').contents().find('body').height();
+                },
+                afterClose: function () {
+                    __doPostBack('', '');
+                }
+            });
+        }
+    </script>
+
+    <!--Grobal-->
+    <link href="/_MasterPage/_Css/Grobal/Block.css" rel="stylesheet" type="text/css" />
+    <link href="/_MasterPage/_Css/Grobal/Subject.css" rel="stylesheet" type="text/css" />
+    <link href="/_MasterPage/_Css/Grobal/Table1.css" rel="stylesheet" type="text/css" />
+    <link href="/_MasterPage/_Css/Grobal/Table2.css" rel="stylesheet" type="text/css" />
+    <link href="/_MasterPage/_Css/Grobal/Button1.css" rel="stylesheet" type="text/css" />
+    <link href="/_MasterPage/_Css/Grobal/Button2.css" rel="stylesheet" type="text/css" />
+    <link href="/_MasterPage/_Css/Grobal/TextBox.css" rel="stylesheet" type="text/css" />
+    <link href="/_MasterPage/_Css/Grobal/Tab.css" rel="stylesheet" type="text/css" />
+    <link href="/_MasterPage/_Css/Grobal/Title.css" rel="stylesheet" type="text/css" />
+    <link href="/_MasterPage/_Css/Base.css" rel="stylesheet" type="text/css" />
+    <link href="/_Element/Pagger/_Css/Pagger.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body id="body" runat="server" clientidmode="Static">
+    <form id="form1" runat="server">
+        <div id="Base">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

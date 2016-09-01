@@ -1,0 +1,51 @@
+﻿body {
+}
+
+#Config {
+}
+
+    #Config table {
+        width: 100%;
+    }
+
+        #Config table label {
+            font-size: 11px;
+            color: #999;
+        }
+
+        #Config table input[type=text], #Config table textarea {
+            padding: 4px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+    #Config .Left {
+        width: 49%;
+    }
+
+        #Config .Left .FbShareImage {
+            width: 100%;
+        }
+
+    #Config .Right {
+        float: right;
+        width: 50%;
+    }
+
+        #Config .Right .FbShareName {
+            margin-bottom: 4px;
+            padding: 8px;
+            width: 94%;
+        }
+
+        #Config .Right .FbShareCaption {
+            margin-bottom: 4px;
+            padding: 8px;
+            width: 94%;
+        }
+
+        #Config .Right .FbShareContext {
+            padding: 8px;
+            width: 94%;
+            height: 97px;
+        }

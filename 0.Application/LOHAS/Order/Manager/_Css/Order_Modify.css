@@ -1,0 +1,22 @@
+﻿body {
+    width: 600px;
+}
+
+#Order_Modify {
+}
+
+    #Order_Modify .Table2 {
+        width: 100%;
+    }
+
+        #Order_Modify .Table2 .ProdileTitle {
+            background-color: #d6ecfc;
+        }
+
+    #Order_Modify .Button2.Red {
+        float: left;
+    }
+
+    #Order_Modify .Button2.Blue {
+        float: right;
+    }

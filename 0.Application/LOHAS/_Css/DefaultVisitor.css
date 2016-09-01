@@ -1,0 +1,114 @@
+﻿#DefaultVisitor {
+}
+
+
+    #DefaultVisitor .SlideShowList {
+        padding-top: 15px;
+        height: 364px;
+    }
+
+        #DefaultVisitor .SlideShowList .SlideShowItem {
+            display: block;
+            height: 364px;
+        }
+
+
+        /*-- slick --*/
+        #DefaultVisitor .SlideShowList .slick-dotted.slick-slider {
+            margin: 0;
+        }
+
+        #DefaultVisitor .SlideShowList .slick-dots {
+            bottom: 10px;
+        }
+
+            #DefaultVisitor .SlideShowList .slick-dots li button::before {
+                opacity: .5;
+                color: #fff;
+            }
+
+            #DefaultVisitor .SlideShowList .slick-dots li.slick-active button::before {
+                font-size: 15px;
+                opacity: .875;
+                color: #fff;
+            }
+
+        #DefaultVisitor .SlideShowList .slick-arrow {
+            width: auto;
+            height: auto;
+        }
+
+            #DefaultVisitor .SlideShowList .slick-arrow::before {
+                display: block;
+                content: '';
+                width: 30px;
+                height: 65px;
+            }
+
+            #DefaultVisitor .SlideShowList .slick-arrow.slick-prev {
+                left: 15px;
+                z-index: 999;
+            }
+
+                #DefaultVisitor .SlideShowList .slick-arrow.slick-prev:before {
+                    background-image: url("../_Image/slider-left.png");
+                }
+
+            #DefaultVisitor .SlideShowList .slick-arrow.slick-next {
+                right: 15px;
+            }
+
+                #DefaultVisitor .SlideShowList .slick-arrow.slick-next:before {
+                    background-image: url("../_Image/slider-right.png");
+                }
+
+
+    #DefaultVisitor .Activity {
+        padding: 30px 64px;
+    }
+
+        #DefaultVisitor .Activity h3 {
+            color: white;
+            width: 90px;
+            height: 32px;
+            line-height: 32px;
+            color: white;
+            text-align: center;
+            font-weight: normal;
+            letter-spacing: 1px;
+            background-color: #8B6E49;
+            border-radius: 20px;
+        }
+
+        #DefaultVisitor .Activity .Explain {
+            display: block;
+            padding: 14px 6px;
+        }
+
+        #DefaultVisitor .Activity.Counter {
+            text-align: center;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+            #DefaultVisitor .Activity.Counter .Counter {
+                display: inline-block;
+                margin: 0 2px;
+                color: #9FA0A0;
+                font-size: 39px;
+                vertical-align: baseline;
+            }
+
+    #DefaultVisitor .RegistorButton {
+        margin: 40px auto;
+        display: block;
+        width: 214px;
+        border-radius: 10px;
+        height: 52px;
+        color: white;
+        line-height: 52px;
+        font-size: 19px;
+        letter-spacing: 1px;
+        text-align: center;
+        background-color: #8B6E49;
+    }

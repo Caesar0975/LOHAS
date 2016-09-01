@@ -1,0 +1,27 @@
+﻿.Subject {
+    padding-left: 40px;
+    height: 31px;
+    line-height: 33px;
+    color: #fff;
+    font-size: 13px;
+    background-image: url("/_MasterPage/_Css/Grobal/Subject/Subject.png");
+    background-repeat: no-repeat;
+}
+
+.Subject2 {
+    padding-left: 40px;
+    height: 31px;
+    line-height: 33px;
+    color: #fff;
+    font-size: 13px;
+    background-image: url("/_MasterPage/_Css/Grobal/Subject/Subject2.png");
+    background-repeat: no-repeat;
+}
+
+.Box {
+    padding-bottom: 10px;
+    background-color: #fff;
+    background-image: url('/_MasterPage/_Css/Grobal/Subject/Bg.png');
+    background-repeat: repeat-x;
+    background-position: center bottom;
+}

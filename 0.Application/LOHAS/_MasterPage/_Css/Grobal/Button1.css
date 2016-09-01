@@ -1,0 +1,29 @@
+﻿.Button1
+{
+    display:inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url('/_MasterPage/_Css/Grobal/Button1/Button1.png');
+    background-repeat: no-repeat;
+    vertical-align:middle;
+}
+
+.Button1.Add
+{
+    background-position: 0 0;
+}
+
+.Button1.Edit
+{
+    background-position: -90px 0;
+}
+
+.Button1.Minus
+{
+    background-position: -60px 0;
+}
+
+.Button1.Delete
+{
+    background-position: -30px 0;
+}

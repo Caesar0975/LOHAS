@@ -1,0 +1,49 @@
+﻿#Sms_List {
+}
+
+    #Sms_List .Block {
+        padding: 4px 0 4px 10px;
+        line-height: 25px;
+    }
+
+    #Sms_List h4 {
+        display: block;
+    }
+
+    #Sms_List input[type=checkbox] {
+        vertical-align: middle;
+    }
+
+        #Sms_List input[type=checkbox] + label {
+            margin-right: 12px;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+    #Sms_List input.Datepicker {
+        margin: 0 4px;
+        height: 18px;
+        width: 92px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid #999;
+        border-radius: 5px;
+        vertical-align: middle;
+    }
+
+    #Sms_List .SearchButton {
+        height: 20px;
+        line-height: 19px;
+        vertical-align: middle;
+    }
+
+    #Sms_List .SendButton {
+        display: block;
+        width: 60px;
+        margin: 6px auto 10px auto;
+    }
+
+    #Sms_List table {
+        width: 98%;
+    }

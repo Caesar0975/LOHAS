@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d2a5da6c-268d-44c8-9bb6-eb6ae597ca3e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.easysms.com.tw:9090/APIService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="APIService.xsd" MetadataType="Schema" ID="40eebacb-fbdd-44ee-884a-32b198f6bf6a" SourceId="1" SourceUrl="http://202.153.187.252:9090/APIService?xsd=xsd1" />
+    <MetadataFile FileName="APIService.wsdl" MetadataType="Wsdl" ID="63f65cf4-9741-4acc-9157-71cb52a246b2" SourceId="1" SourceUrl="http://202.153.187.252:9090/APIService?wsdl" />
+    <MetadataFile FileName="APIService1.xsd" MetadataType="Schema" ID="9e0aeabe-cff3-4cbe-809b-ef5a8e71acab" SourceId="1" SourceUrl="http://202.153.187.252:9090/APIService?xsd=xsd0" />
+    <MetadataFile FileName="APIService2.xsd" MetadataType="Schema" ID="d4525d3f-66ac-4515-a5b8-46038bef1959" SourceId="1" SourceUrl="http://202.153.187.252:9090/APIService?xsd=xsd2" />
+    <MetadataFile FileName="APIService.disco" MetadataType="Disco" ID="f944c12a-2795-476d-a0fe-25092e5124ef" SourceId="1" SourceUrl="http://202.153.187.252:9090/APIService?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
