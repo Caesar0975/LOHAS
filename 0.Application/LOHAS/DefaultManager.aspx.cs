@@ -37,6 +37,9 @@ public partial class _ManagerLogin : System.Web.UI.Page
             if (Errors.Count() > 0) { throw new Exception(string.Join("\\r\\n", Errors)); }
 
             SwitchUserManager.SwitchUser(Account, Password, ValidCode, false, "/Order/Manager/Order_List.aspx");
+
+
+
         }
         catch (Exception ex)
         {
